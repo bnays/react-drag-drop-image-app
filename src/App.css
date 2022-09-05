@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.main-content {
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h1 {
+   text-align: center;
+}
+.pictures {
+   margin: 20px;
+}
+img {
+   margin: 0px;
+   border: 1px solid #000000;
+}
+.houseRoof {
+   display: inline-block;
+   position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board > div {
+   position: absolute;
+   left: 0;
+   top: 0;
+   /* border: 2px solid black; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column-reverse;
+   flex-wrap: wrap;
+   align-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board img {
+   width: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.board__1 > div {
+   width: 140px;
+   height: 120px;
+   transform: translate(440px, 185px);
 }
 
-.App-link {
-  color: #61dafb;
+.board__2 > div {
+   width: 65px;
+   height: 110px;
+   transform: translate(717px, 184px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.board__3 > div {
+   width: 90px;
+   height: 65px;
+   transform: translate(655px, 433px);
+}
+
+.board__4 > div {
+   width: 70px;
+   height: 55px;
+   transform: translate(465px, 420px);
+}
+
+.board__5 > div {
+   width: 58px;
+   height: 55px;
+   transform: translate(550px, 418px);
+}
+
+.board__6 > div {
+   width: 42px;
+   height: 68px;
+   transform: translate(753px, 430px);
+}
+
+.board__7 > div {
+   width: 60px;
+   height: 53px;
+   transform: translate(585px, 172px);
+}
+
+.board__8 > div {
+   width: 32px;
+   height: 53px;
+   transform: translate(653px, 172px);
+}
+
+.board__9 > div {
+   width: 152px;
+   height: 33px;
+   transform: translate(410px, 141px);
+}
+
+.board__10 > div {
+   width: 90px;
+   height: 31px;
+   transform: translate(670px, 132px);
+}
+
+.board__9 img,
+.board__10 img {
+   width: 15px;
 }
